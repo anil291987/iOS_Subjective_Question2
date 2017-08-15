@@ -15,6 +15,10 @@
 		4B853B031F42395D00FCB196 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B853AFA1F42395D00FCB196 /* Info.plist */; };
 		4B853B041F42395D00FCB196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B853AFB1F42395D00FCB196 /* ViewController.swift */; };
 		4B853B0C1F423A5300FCB196 /* LocationLoggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B853B0B1F423A5300FCB196 /* LocationLoggingTests.swift */; };
+		4BA4DD671F435FE600AC3B21 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA4DD661F435FE600AC3B21 /* libsqlite3.0.tbd */; };
+		4BA4DD6D1F4361BB00AC3B21 /* LocationLoggingDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4BA4DD6C1F4361BB00AC3B21 /* LocationLoggingDB.sqlite */; };
+		4BA4DD701F43677F00AC3B21 /* LocationDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA4DD6F1F43677F00AC3B21 /* LocationDB.swift */; };
+		4BDAC55F1F43560000A522D9 /* SQLLiteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDAC55E1F43560000A522D9 /* SQLLiteHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,11 @@
 		4B853B091F423A5300FCB196 /* LocationLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B853B0B1F423A5300FCB196 /* LocationLoggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLoggingTests.swift; sourceTree = "<group>"; };
 		4B853B0D1F423A5300FCB196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA4DD661F435FE600AC3B21 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4BA4DD681F43605900AC3B21 /* LocationLogging-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LocationLogging-Bridging-Header.h"; sourceTree = "<group>"; };
+		4BA4DD6C1F4361BB00AC3B21 /* LocationLoggingDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = LocationLoggingDB.sqlite; sourceTree = "<group>"; };
+		4BA4DD6F1F43677F00AC3B21 /* LocationDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDB.swift; sourceTree = "<group>"; };
+		4BDAC55E1F43560000A522D9 /* SQLLiteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLLiteHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA4DD671F435FE600AC3B21 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +75,7 @@
 				4B853AF11F42395D00FCB196 /* LocationLogging */,
 				4B853B0A1F423A5300FCB196 /* LocationLoggingTests */,
 				4B5616EE1F4201C000693FA3 /* Products */,
+				4BA4DD651F435FE600AC3B21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,12 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				4B853AF21F42395D00FCB196 /* AppDelegate.swift */,
-				4B853AF31F42395D00FCB196 /* Assets.xcassets */,
-				4B853AF41F42395D00FCB196 /* LaunchScreen.storyboard */,
-				4B853AF61F42395D00FCB196 /* Main.storyboard */,
+				4BA4DD691F43610500AC3B21 /* ViewController */,
+				4BA4DD6A1F43611E00AC3B21 /* Views */,
 				4B853AF81F42395D00FCB196 /* Helper */,
-				4B853AFA1F42395D00FCB196 /* Info.plist */,
-				4B853AFB1F42395D00FCB196 /* ViewController.swift */,
+				4BA4DD6E1F43642A00AC3B21 /* Database & Models */,
+				4BA4DD6B1F43614900AC3B21 /* Resource */,
 			);
 			path = LocationLogging;
 			sourceTree = "<group>";
@@ -95,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				4B853AF91F42395D00FCB196 /* LocationManagerHelper.swift */,
+				4BDAC55E1F43560000A522D9 /* SQLLiteHelper.swift */,
+				4BA4DD6F1F43677F00AC3B21 /* LocationDB.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -106,6 +118,49 @@
 				4B853B0D1F423A5300FCB196 /* Info.plist */,
 			);
 			path = LocationLoggingTests;
+			sourceTree = "<group>";
+		};
+		4BA4DD651F435FE600AC3B21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BA4DD661F435FE600AC3B21 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BA4DD691F43610500AC3B21 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4B853AFB1F42395D00FCB196 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4BA4DD6A1F43611E00AC3B21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B853AF41F42395D00FCB196 /* LaunchScreen.storyboard */,
+				4B853AF61F42395D00FCB196 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4BA4DD6B1F43614900AC3B21 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4BA4DD6C1F4361BB00AC3B21 /* LocationLoggingDB.sqlite */,
+				4B853AF31F42395D00FCB196 /* Assets.xcassets */,
+				4B853AFA1F42395D00FCB196 /* Info.plist */,
+				4BA4DD681F43605900AC3B21 /* LocationLogging-Bridging-Header.h */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		4BA4DD6E1F43642A00AC3B21 /* Database & Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Database & Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B853B001F42395D00FCB196 /* LaunchScreen.storyboard in Resources */,
+				4BA4DD6D1F4361BB00AC3B21 /* LocationLoggingDB.sqlite in Resources */,
 				4B853AFF1F42395D00FCB196 /* Assets.xcassets in Resources */,
 				4B853B031F42395D00FCB196 /* Info.plist in Resources */,
 				4B853B011F42395D00FCB196 /* Main.storyboard in Resources */,
@@ -211,9 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDAC55F1F43560000A522D9 /* SQLLiteHelper.swift in Sources */,
 				4B853AFE1F42395D00FCB196 /* AppDelegate.swift in Sources */,
 				4B853B041F42395D00FCB196 /* ViewController.swift in Sources */,
 				4B853B021F42395D00FCB196 /* LocationManagerHelper.swift in Sources */,
+				4BA4DD701F43677F00AC3B21 /* LocationDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.LocationLogging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocationLogging/LocationLogging-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -382,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.LocationLogging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocationLogging/LocationLogging-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

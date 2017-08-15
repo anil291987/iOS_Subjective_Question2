@@ -20,7 +20,7 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Location logging requires access to your location for log your location data. Access can be changed under iPhone Settings -&gt; Privacy -&gt; Location Services.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location logging requires access to your location for log your location data. Access can be changed under iPhone Settings -&gt; Privacy -&gt; Location Services.</string>

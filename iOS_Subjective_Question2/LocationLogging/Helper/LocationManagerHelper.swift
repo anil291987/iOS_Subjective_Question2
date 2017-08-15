@@ -65,7 +65,7 @@ class LocationManagerHelper: NSObject {
          If speed decrease from 90km/h to 20kms so it should not goes to 30 seconds to 5 minute, it should become  1 minute only.
      */
     switch speedInKmPerHour {
-        case 80...:
+        case 80..<Double.infinity:
             currentTimeInterval = 30
             nextTimeInterval = 60
         case 60..<80:
@@ -98,7 +98,10 @@ class LocationManagerHelper: NSObject {
         isTimerInitialized = false
     }
     func saveLocation() {
+        //Save location in file
         saveLocationInFile()
+        //Save Location in DB
+        saveLocationInDB()
     }
     
     func saveLocationInFile() {
@@ -136,6 +139,12 @@ class LocationManagerHelper: NSObject {
             }
         }
         
+    }
+    func saveLocationInDB() {
+        let databaseHelper = LocationDB.sharedInstance
+        if databaseHelper.insertIntoLocation(time:currentTimeStamp!, latitude: currentLatitude!, longnitude: currentLongnitude!, currentTimeInterval: currentTimeInterval, nextTimeInterval: nextTimeInterval) {
+            print("Location inserted to db successfully!")
+        }
     }
 }
 extension LocationManagerHelper: CLLocationManagerDelegate {
