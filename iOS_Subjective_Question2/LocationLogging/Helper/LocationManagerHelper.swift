@@ -14,12 +14,12 @@ class LocationManagerHelper: NSObject {
     static let sharedInstance = LocationManagerHelper()
     
     let locationManager = CLLocationManager()
-    var currentLatitude : CLLocationDegrees? = nil
-    var currentLongnitude: CLLocationDegrees? = nil
+    var currentLatitude : Double? = nil
+    var currentLongnitude: Double? = nil
     var currentLocation: CLLocation? = nil
     var currentTimeStamp: Date? = nil
-    var speedInKmPerHour: CLLocationSpeed = 0.0
-    var previousSpeedInKmPerHour: CLLocationSpeed = 0.0
+    var speedInKmPerHour: Double = 0.0
+    var previousSpeedInKmPerHour: Double = 0.0
     var isSpeedChanged: Bool = false
     var locationCaptureTimer: Timer? = nil
     var currentTimeInterval: TimeInterval = 0.0
@@ -38,6 +38,7 @@ class LocationManagerHelper: NSObject {
     }
     func stopUpdatingLocation() {
         locationManager.stopUpdatingLocation()
+        locationManager.delegate = nil
     }
     func changeTimerIntervalAsPerCalculatedSpeed() {
         //Update isTimeIntialized status
@@ -169,9 +170,7 @@ extension LocationManagerHelper: CLLocationManagerDelegate {
             }else{
                 isSpeedChanged = false
             }
-            print(speedInKmPerHour)
             changeTimerIntervalAsPerCalculatedSpeed()
-            
         }
         if let lat = currentLatitude , let long = currentLongnitude {
             currentLocation = CLLocation(latitude: lat, longitude: long)

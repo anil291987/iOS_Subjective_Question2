@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet weak var lblSpeedText: UILabel!
+class LocationViewController: UIViewController {
+    @IBOutlet weak var lblStartOrStopLocation: UILabel!
+    @IBOutlet weak var locationStartorStopSwitch: UISwitch!
     let locationManager = LocationManagerHelper.sharedInstance
     override func viewDidLoad() {
         super.viewDidLoad()

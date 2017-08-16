@@ -12,17 +12,16 @@
 		4B853B001F42395D00FCB196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B853AF41F42395D00FCB196 /* LaunchScreen.storyboard */; };
 		4B853B011F42395D00FCB196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B853AF61F42395D00FCB196 /* Main.storyboard */; };
 		4B853B021F42395D00FCB196 /* LocationManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B853AF91F42395D00FCB196 /* LocationManagerHelper.swift */; };
-		4B853B031F42395D00FCB196 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B853AFA1F42395D00FCB196 /* Info.plist */; };
-		4B853B041F42395D00FCB196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B853AFB1F42395D00FCB196 /* ViewController.swift */; };
-		4B853B0C1F423A5300FCB196 /* LocationLoggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B853B0B1F423A5300FCB196 /* LocationLoggingTests.swift */; };
+		4B853B041F42395D00FCB196 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B853AFB1F42395D00FCB196 /* LocationViewController.swift */; };
 		4BA4DD671F435FE600AC3B21 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA4DD661F435FE600AC3B21 /* libsqlite3.0.tbd */; };
 		4BA4DD6D1F4361BB00AC3B21 /* LocationLoggingDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4BA4DD6C1F4361BB00AC3B21 /* LocationLoggingDB.sqlite */; };
 		4BA4DD701F43677F00AC3B21 /* LocationDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA4DD6F1F43677F00AC3B21 /* LocationDB.swift */; };
+		4BBD54641F448CCB00F773D8 /* LocationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD54631F448CCB00F773D8 /* LocationViewControllerTests.swift */; };
 		4BDAC55F1F43560000A522D9 /* SQLLiteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDAC55E1F43560000A522D9 /* SQLLiteHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4B853B0E1F423A5300FCB196 /* PBXContainerItemProxy */ = {
+		4BBD54661F448CCB00F773D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4B5616E51F4201C000693FA3 /* Project object */;
 			proxyType = 1;
@@ -39,14 +38,14 @@
 		4B853AF71F42395D00FCB196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B853AF91F42395D00FCB196 /* LocationManagerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerHelper.swift; sourceTree = "<group>"; };
 		4B853AFA1F42395D00FCB196 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B853AFB1F42395D00FCB196 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B853B091F423A5300FCB196 /* LocationLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B853B0B1F423A5300FCB196 /* LocationLoggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLoggingTests.swift; sourceTree = "<group>"; };
-		4B853B0D1F423A5300FCB196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B853AFB1F42395D00FCB196 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		4BA4DD661F435FE600AC3B21 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		4BA4DD681F43605900AC3B21 /* LocationLogging-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LocationLogging-Bridging-Header.h"; sourceTree = "<group>"; };
 		4BA4DD6C1F4361BB00AC3B21 /* LocationLoggingDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = LocationLoggingDB.sqlite; sourceTree = "<group>"; };
 		4BA4DD6F1F43677F00AC3B21 /* LocationDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDB.swift; sourceTree = "<group>"; };
+		4BBD54611F448CCB00F773D8 /* LocationLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBD54631F448CCB00F773D8 /* LocationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewControllerTests.swift; sourceTree = "<group>"; };
+		4BBD54651F448CCB00F773D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BDAC55E1F43560000A522D9 /* SQLLiteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLLiteHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +58,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B853B061F423A5300FCB196 /* Frameworks */ = {
+		4BBD545E1F448CCB00F773D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				4B853AF11F42395D00FCB196 /* LocationLogging */,
-				4B853B0A1F423A5300FCB196 /* LocationLoggingTests */,
+				4BBD54621F448CCB00F773D8 /* LocationLoggingTests */,
 				4B5616EE1F4201C000693FA3 /* Products */,
 				4BA4DD651F435FE600AC3B21 /* Frameworks */,
 			);
@@ -83,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				4B5616ED1F4201C000693FA3 /* LocationLogging.app */,
-				4B853B091F423A5300FCB196 /* LocationLoggingTests.xctest */,
+				4BBD54611F448CCB00F773D8 /* LocationLoggingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,15 +110,6 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		4B853B0A1F423A5300FCB196 /* LocationLoggingTests */ = {
-			isa = PBXGroup;
-			children = (
-				4B853B0B1F423A5300FCB196 /* LocationLoggingTests.swift */,
-				4B853B0D1F423A5300FCB196 /* Info.plist */,
-			);
-			path = LocationLoggingTests;
-			sourceTree = "<group>";
-		};
 		4BA4DD651F435FE600AC3B21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +121,7 @@
 		4BA4DD691F43610500AC3B21 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4B853AFB1F42395D00FCB196 /* ViewController.swift */,
+				4B853AFB1F42395D00FCB196 /* LocationViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -163,6 +153,15 @@
 			name = "Database & Models";
 			sourceTree = "<group>";
 		};
+		4BBD54621F448CCB00F773D8 /* LocationLoggingTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BBD54631F448CCB00F773D8 /* LocationViewControllerTests.swift */,
+				4BBD54651F448CCB00F773D8 /* Info.plist */,
+			);
+			path = LocationLoggingTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,22 +182,22 @@
 			productReference = 4B5616ED1F4201C000693FA3 /* LocationLogging.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4B853B081F423A5300FCB196 /* LocationLoggingTests */ = {
+		4BBD54601F448CCB00F773D8 /* LocationLoggingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B853B101F423A5300FCB196 /* Build configuration list for PBXNativeTarget "LocationLoggingTests" */;
+			buildConfigurationList = 4BBD54681F448CCB00F773D8 /* Build configuration list for PBXNativeTarget "LocationLoggingTests" */;
 			buildPhases = (
-				4B853B051F423A5300FCB196 /* Sources */,
-				4B853B061F423A5300FCB196 /* Frameworks */,
-				4B853B071F423A5300FCB196 /* Resources */,
+				4BBD545D1F448CCB00F773D8 /* Sources */,
+				4BBD545E1F448CCB00F773D8 /* Frameworks */,
+				4BBD545F1F448CCB00F773D8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4B853B0F1F423A5300FCB196 /* PBXTargetDependency */,
+				4BBD54671F448CCB00F773D8 /* PBXTargetDependency */,
 			);
 			name = LocationLoggingTests;
 			productName = LocationLoggingTests;
-			productReference = 4B853B091F423A5300FCB196 /* LocationLoggingTests.xctest */;
+			productReference = 4BBD54611F448CCB00F773D8 /* LocationLoggingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +206,7 @@
 		4B5616E51F4201C000693FA3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Anil Upadhyay";
 				TargetAttributes = {
@@ -215,8 +214,9 @@
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
-					4B853B081F423A5300FCB196 = {
-						CreatedOnToolsVersion = 9.0;
+					4BBD54601F448CCB00F773D8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 4B5616EC1F4201C000693FA3;
 					};
 				};
@@ -235,7 +235,7 @@
 			projectRoot = "";
 			targets = (
 				4B5616EC1F4201C000693FA3 /* LocationLogging */,
-				4B853B081F423A5300FCB196 /* LocationLoggingTests */,
+				4BBD54601F448CCB00F773D8 /* LocationLoggingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,12 +248,11 @@
 				4B853B001F42395D00FCB196 /* LaunchScreen.storyboard in Resources */,
 				4BA4DD6D1F4361BB00AC3B21 /* LocationLoggingDB.sqlite in Resources */,
 				4B853AFF1F42395D00FCB196 /* Assets.xcassets in Resources */,
-				4B853B031F42395D00FCB196 /* Info.plist in Resources */,
 				4B853B011F42395D00FCB196 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B853B071F423A5300FCB196 /* Resources */ = {
+		4BBD545F1F448CCB00F773D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,27 +268,27 @@
 			files = (
 				4BDAC55F1F43560000A522D9 /* SQLLiteHelper.swift in Sources */,
 				4B853AFE1F42395D00FCB196 /* AppDelegate.swift in Sources */,
-				4B853B041F42395D00FCB196 /* ViewController.swift in Sources */,
+				4B853B041F42395D00FCB196 /* LocationViewController.swift in Sources */,
 				4B853B021F42395D00FCB196 /* LocationManagerHelper.swift in Sources */,
 				4BA4DD701F43677F00AC3B21 /* LocationDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B853B051F423A5300FCB196 /* Sources */ = {
+		4BBD545D1F448CCB00F773D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B853B0C1F423A5300FCB196 /* LocationLoggingTests.swift in Sources */,
+				4BBD54641F448CCB00F773D8 /* LocationViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4B853B0F1F423A5300FCB196 /* PBXTargetDependency */ = {
+		4BBD54671F448CCB00F773D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4B5616EC1F4201C000693FA3 /* LocationLogging */;
-			targetProxy = 4B853B0E1F423A5300FCB196 /* PBXContainerItemProxy */;
+			targetProxy = 4BBD54661F448CCB00F773D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -446,40 +445,28 @@
 			};
 			name = Release;
 		};
-		4B853B111F423A5300FCB196 /* Debug */ = {
+		4BBD54691F448CCB00F773D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = LocationLoggingTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.LocationLoggingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationLogging.app/LocationLogging";
 			};
 			name = Debug;
 		};
-		4B853B121F423A5300FCB196 /* Release */ = {
+		4BBD546A1F448CCB00F773D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = LocationLoggingTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.LocationLoggingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationLogging.app/LocationLogging";
 			};
 			name = Release;
@@ -505,11 +492,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B853B101F423A5300FCB196 /* Build configuration list for PBXNativeTarget "LocationLoggingTests" */ = {
+		4BBD54681F448CCB00F773D8 /* Build configuration list for PBXNativeTarget "LocationLoggingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B853B111F423A5300FCB196 /* Debug */,
-				4B853B121F423A5300FCB196 /* Release */,
+				4BBD54691F448CCB00F773D8 /* Debug */,
+				4BBD546A1F448CCB00F773D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
